@@ -1,7 +1,9 @@
 name: 🚀 Run
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   run:
@@ -20,7 +22,7 @@ jobs:
 
       - name: 🚀 Run Tests
         run: |
-          python -m unittest test_file.py
+          python3 -m unittest test_file.py
         
       - name: 📊 Generate Test Report
         run: |
