@@ -17,3 +17,12 @@ jobs:
         shell: bash
         run: |
           python3 main.py
+
+      - name: 🚀 Run Tests
+        run: |
+          python -m unittest test_file.py
+        
+      - name: 📊 Generate Test Report
+        run: |
+          # Generare raport pentru testele rulate
+          python3 generate_report.py
