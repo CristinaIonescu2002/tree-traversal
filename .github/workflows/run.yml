@@ -24,5 +24,4 @@ jobs:
         
       - name: 📊 Generate Test Report
         run: |
-          # Generare raport pentru testele rulate
           python3 generate_report.py
